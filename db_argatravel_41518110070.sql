@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 11, 2020 at 08:53 AM
+-- Generation Time: Jul 11, 2020 at 12:49 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.5
 
@@ -238,7 +238,11 @@ INSERT INTO `tbl_order_41518110070` (`id_order`, `kd_order`, `kd_tiket`, `kd_jad
 (37, 'ORD00005', 'TORD00005202007162', 'J0002', 'PL0001', 'BNK0004', 'TJ008', 'Arga Hutama', 'Sabtu, 11 Juli 2020, 13:14', '2020-07-16', 'Arga', '23', '2', '342234234432423', '023333333', 'Jalan Jalan yuk', 'argahuts@gmail.com', '12-07-2020 13:14:57', 'assets/frontend/upload/qrcode/ORD00005.png', '2'),
 (38, 'ORD00006', 'TORD00006202007133', 'J0007', 'PL0001', 'BNK0001', 'TJ008', 'Arga Hutama', 'Sabtu, 11 Juli 2020, 13:29', '2020-07-13', 'Mason Greenwood', '19', '3', '342234234432423', '023333333', 'Jalan Jalan yuk', 'argahuts@gmail.com', '12-07-2020 13:29:55', 'assets/frontend/upload/qrcode/ORD00006.png', '2'),
 (39, 'ORD00007', 'TORD000072020121811', 'J0009', 'PL0001', 'BNK0004', 'TJ008', 'Arga Hutama', 'Sabtu, 11 Juli 2020, 13:39', '2020-12-18', 'Buwung Puyuh', '17', '11', '342234234432423', '023333333', 'Jalan Jalan yuk', 'argahuts@gmail.com', '12-07-2020 13:39:14', 'assets/frontend/upload/qrcode/ORD00007.png', '2'),
-(40, 'ORD00008', 'T000082020072513', 'J0004', 'PL0002', 'BNK0004', 'TJ008', 'Otong Surotong', 'Sabtu, 11 Juli 2020, 13:46', '2020-07-25', 'Otong', '69', '13', '02564651321564', '089682261128', 'Gang Buntu', 'sellapurwita36@gmail.com', '12-07-2020 13:46:15', 'assets/frontend/upload/qrcode/ORD00008.png', '2');
+(40, 'ORD00008', 'T000082020072513', 'J0004', 'PL0002', 'BNK0004', 'TJ008', 'Otong Surotong', 'Sabtu, 11 Juli 2020, 13:46', '2020-07-25', 'Otong', '69', '13', '02564651321564', '089682261128', 'Gang Buntu', 'sellapurwita36@gmail.com', '12-07-2020 13:46:15', 'assets/frontend/upload/qrcode/ORD00008.png', '2'),
+(41, 'ORD00009', 'T00092020072912', 'J0009', 'PL0001', 'BNK0001', 'TJ008', 'Arga Hutama', 'Sabtu, 11 Juli 2020, 14:45', '2020-07-29', 'Dindin badindin', '60', '12', '342234234432423', '023333333', 'Jalan Jalan yuk', 'argahuts@gmail.com', '12-07-2020 14:45:31', 'assets/frontend/upload/qrcode/ORD00009.png', '2'),
+(42, 'ORD00010', 'T0010202007121', 'J0009', 'PL0001', 'BNK0002', 'TJ008', 'Arga Hutama', 'Sabtu, 11 Juli 2020, 16:47', '2020-07-12', 'Bambang', '82', '1', '342234234432423', '023333333', 'Jalan Jalan yuk', 'argahuts@gmail.com', '12-07-2020 16:47:09', 'assets/frontend/upload/qrcode/ORD00010.png', '2'),
+(43, 'ORD00011', 'T0011202007177', 'J0009', 'PL0003', 'BNK0004', 'TJ008', 'Apaan Bambang', 'Sabtu, 11 Juli 2020, 16:59', '2020-07-17', 'Apaan Bambang', '80', '7', '346454215172455', '6281299397276', 'Cengkareng', 'dimasrestuadrianto@gmail.com', '12-07-2020 16:59:54', 'assets/frontend/upload/qrcode/ORD00011.png', '2'),
+(44, 'ORD00012', 'T0012202007302', 'J0002', 'PL0003', 'BNK0002', 'TJ008', 'Apaan Bambang', 'Sabtu, 11 Juli 2020, 17:03', '2020-07-30', 'A', '90', '2', '346454215172455', '6281299397276', 'Cengkareng', 'dimasrestuadrianto@gmail.com', '12-07-2020 17:03:50', 'assets/frontend/upload/qrcode/ORD00012.png', '1');
 
 -- --------------------------------------------------------
 
@@ -265,11 +269,11 @@ CREATE TABLE `tbl_pelanggan_41518110070` (
 --
 
 INSERT INTO `tbl_pelanggan_41518110070` (`kd_pelanggan`, `username_pelanggan`, `password_pelanggan`, `no_ktp_pelanggan`, `nama_pelanggan`, `alamat_pelanggan`, `email_pelanggan`, `telpon_pelanggan`, `img_pelanggan`, `status_pelanggan`, `date_create_pelanggan`) VALUES
-('PL0002', 'otong', '$2y$10$iV6Almk4gIrVuUeC2v5VG.8PxjaVQLgXakxMvrJcUp5TM9d3DxPx6', '02564651321564', 'Otong Surotong', 'Gang Buntu', 'sellapurwita36@gmail.com', '089682261128', 'assets/frontend/img/default.png', 1, '1552202266'),
-('PL0003', 'bambang', '$2y$10$iV6Almk4gIrVuUeC2v5VG.8PxjaVQLgXakxMvrJcUp5TM9d3DxPx6', '346454215172455', 'Apaan Bambang', 'Cengkareng', 'dimasrestuadrianto@gmail.com', '6281299397276', 'assets/frontend/img/default.png', 1, '1593961592'),
+('PL0002', 'otong', '$2y$10$SP7XNH3lyq.iZ4dSND/LwuxJJvNII6sgxgyGyO.2b7Q.6jgdd7lDC', '02564651321564', 'Otong Surotong', 'Gang Buntu', 'sellapurwita36@gmail.com', '089682261128', 'assets/frontend/img/default.png', 1, '1552202266'),
+('PL0003', 'bambang', '$2y$10$SP7XNH3lyq.iZ4dSND/LwuxJJvNII6sgxgyGyO.2b7Q.6jgdd7lDC', '346454215172455', 'Apaan Bambang', 'Cengkareng', 'dimasrestuadrianto@gmail.com', '6281299397276', 'assets/frontend/img/default.png', 1, '1593961592'),
 ('PL0001', 'argahutama', '$2y$10$SP7XNH3lyq.iZ4dSND/LwuxJJvNII6sgxgyGyO.2b7Q.6jgdd7lDC', '342234234432423', 'Arga Hutama', 'Jalan Jalan yuk', 'argahuts@gmail.com', '023333333', 'assets/frontend/img/default.png', 1, '1593961592'),
-('PL0004', 'wew', '$2y$10$iV6Almk4gIrVuUeC2v5VG.8PxjaVQLgXakxMvrJcUp5TM9d3DxPx6', '34343434344343', 'Wew', 'Jl.in aja dulu', 'rizkifirmansyah435@gmail.com', '08745179471', 'assets/frontend/img/default.png', 1, '1554385261'),
-('PL0005', 'Gatau7', '$2y$10$GbrdkfCg.Su9SrLpOvNMQeNQO.eYdPZnqkKYqoZvQwB6NOoidmPBu', '', 'Gatau Ah', 'Gatau juga', 'gatauah@gmail.com', '000000000', 'assets/frontend/img/default.png', 1, '1594442042');
+('PL0004', 'wew', '$2y$10$SP7XNH3lyq.iZ4dSND/LwuxJJvNII6sgxgyGyO.2b7Q.6jgdd7lDC', '34343434344343', 'Wew', 'Jl.in aja dulu', 'rizkifirmansyah435@gmail.com', '08745179471', 'assets/frontend/img/default.png', 1, '1554385261'),
+('PL0005', 'Gatau7', '$2y$10$SP7XNH3lyq.iZ4dSND/LwuxJJvNII6sgxgyGyO.2b7Q.6jgdd7lDC', '', 'Gatau Ah', 'Gatau juga', 'gatauah@gmail.com', '000000000', 'assets/frontend/img/default.png', 1, '1594442042');
 
 -- --------------------------------------------------------
 
@@ -297,6 +301,9 @@ CREATE TABLE `tbl_tiket_41518110070` (
 
 INSERT INTO `tbl_tiket_41518110070` (`kd_tiket`, `kd_order`, `nama_tiket`, `kursi_tiket`, `umur_tiket`, `asal_beli_tiket`, `harga_tiket`, `etiket_tiket`, `status_tiket`, `create_tgl_tiket`, `create_admin_tiket`) VALUES
 ('T000082020072513', 'ORD00008', 'Otong', '13', '69 Tahun', 'TJ008', '220000', 'assets/backend/upload/etiket/ORD00008.pdf', '2', '2020-07-11', 'supervisor'),
+('T00092020072912', 'ORD00009', 'Dindin badindin', '12', '60 Tahun', 'TJ008', '120000', 'assets/backend/upload/etiket/ORD00009.pdf', '2', '2020-07-11', 'supervisor'),
+('T0010202007121', 'ORD00010', 'Bambang', '1', '82 Tahun', 'TJ008', '120000', 'assets/backend/upload/etiket/ORD00010.pdf', '2', '2020-07-11', 'supervisor'),
+('T0011202007177', 'ORD00011', 'Apaan Bambang', '7', '80 Tahun', 'TJ008', '120000', 'assets/backend/upload/etiket/ORD00011.pdf', '2', '2020-07-11', 'admin'),
 ('TORD00001J0003202007113', 'ORD00001', 'Arga Hutama', '3', '23 Tahun', 'TJ008', '134000', 'assets/backend/upload/etiket/ORD00001.pdf', '2', '2020-07-08', 'supervisor'),
 ('TORD00002202007097', 'ORD00002', 'Kocheng Oren', '7', '14 Tahun', 'TJ008', '128000', 'assets/backend/upload/etiket/ORD00002.pdf', '2', '2020-07-08', 'supervisor'),
 ('TORD000032020071014', 'ORD00003', 'Berliana Margaretha', '14', '19 Tahun', 'TJ008', '250000', 'assets/backend/upload/etiket/ORD00003.pdf', '2', '2020-07-09', 'supervisor'),
@@ -431,7 +438,7 @@ ALTER TABLE `tbl_menu_41518110070`
 -- AUTO_INCREMENT for table `tbl_order_41518110070`
 --
 ALTER TABLE `tbl_order_41518110070`
-  MODIFY `id_order` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
+  MODIFY `id_order` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=45;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
