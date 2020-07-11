@@ -20,7 +20,7 @@ class Bus_41518110070 extends CI_Controller {
 		$this->load->view('backend/view_bus', $data);
 	}
 	public function tambahbus(){
-		$kode = $this->getkod_model->get_kodbus();
+		$kode = $this->getkod_model_41518110070->get_kodbus();
 		$data = array(
 			'kd_bus' => $kode,
 			'nama_bus' => $this->input->post('nama_bus'),

@@ -43,7 +43,7 @@ class Jadwal_41518110070 extends CI_Controller {
 				$this->session->set_flashdata('message', 'swal("Berhasil", "Tujuan Jadwal Tidak Boleh Sama", "error");');
 			redirect('backend/jadwal_41518110070');
 			}else{
-			$kode = $this->getkod_model->get_kodjad();
+			$kode = $this->getkod_model_41518110070->get_kodjad();
 			$simpan = array(
 					'kd_jadwal' => $kode,
 					'kd_asal' => $asal,

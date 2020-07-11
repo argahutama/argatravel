@@ -96,7 +96,7 @@ class Tiket_41518110070 extends CI_Controller {
 	    include 'assets/phpqrcode/qrlib.php';
 	    $asal =  $this->db->query("SELECT * FROM tbl_tujuan_41518110070
                WHERE kd_tujuan ='".$this->session->userdata('asal')."'")->row_array();		
-		$getkode =  $this->getkod_model->get_kodtmporder();
+		$getkode =  $this->getkod_model_41518110070->get_kodtmporder();
 		$kd_jadwal = $this->session->userdata('jadwal');
 		$kd_pelanggan = $this->session->userdata('kd_pelanggan');
 		$tglberangkat = $this->input->post('tgl');

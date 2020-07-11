@@ -57,8 +57,8 @@ class Login_41518110070 extends CI_Controller {
 					  Username Tidak Terdaftar
 					</div>');
     		redirect('login_41518110070');
+			}
 		}
-	
 	}
 	public function daftar(){
 		$this->form_validation->set_rules('nomor', 'Nomor', 'trim|required|is_unique[tbl_pelanggan_41518110070.telpon_pelanggan]',array(
@@ -88,7 +88,7 @@ class Login_41518110070 extends CI_Controller {
 		} else {
 			$this->load->model('getkod_model_41518110070');
 			$data = array(
-			'kd_pelanggan'	=> $this->getkod_model->get_kodpel(),
+			'kd_pelanggan'	=> $this->getkod_model_41518110070->get_kodpel(),
 			'nama_pelanggan'  => $this->input->post('name'),
 			'email_pelanggan'	    	=> $this->input->post('email'),
 			'img_pelanggan'		=> 'assets/frontend/img/default.png',

@@ -29,7 +29,7 @@ class Rute_41518110070 extends CI_Controller {
 		$this->load->view('backend/view_tujuan', $data);
 	}
 	public function tambahtujuan(){
-		$kode = $this->getkod_model->get_kodtuj();
+		$kode = $this->getkod_model_41518110070->get_kodtuj();
 		$data = array(
 			'kota_tujuan' => $this->input->post('tujuan'),
 			'kd_tujuan' => $kode,
