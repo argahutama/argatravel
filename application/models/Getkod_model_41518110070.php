@@ -96,6 +96,3 @@ class Getkod_model_41518110070 extends CI_Model {
             return "ADM".$kd;
         }
 }
-
-/* End of file getkod_model.php */
-/* Location: ./application/models/getkod_model.php */

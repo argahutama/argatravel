@@ -22,7 +22,7 @@ class Login_41518110070 extends CI_Controller {
     $ambil = $this->db->query('select * from tbl_pelanggan_41518110070 where username_pelanggan = "'.$username.'"')->row_array();
     $password = $this->input->post('password');
 		if ($ambil) {
-			// if ($ambil['status_pelanggan'] == '1') { 
+			 if ($ambil['status_pelanggan'] == '1') { 
 				if (password_verify($password,$ambil['password_pelanggan'])) {
 		    	$this->db->where('username_pelanggan',$username);
 		        $query = $this->db->get('tbl_pelanggan_41518110070');
@@ -86,7 +86,6 @@ class Login_41518110070 extends CI_Controller {
 		if ($this->form_validation->run() == false) {
 			$this->load->view('frontend/daftar');
 		} else {
-			// die(print_r($_POST));
 			$this->load->model('getkod_model_41518110070');
 			$data = array(
 			'kd_pelanggan'	=> $this->getkod_model->get_kodpel(),
@@ -100,17 +99,7 @@ class Login_41518110070 extends CI_Controller {
 			'date_create_pelanggan' => time(),
 			'password_pelanggan'		=> password_hash($this->input->post('password1'),PASSWORD_DEFAULT)
 			);
-			// die(print_r($data));
-			// $token = md5($this->input->post('email').date("d-m-Y H:i:s"));
-			// $data1 = array(
-			// 	'nama_token' => $token,
-			// 	'email_token' => $this->input->post('email'),
-			// 	'date_create_token' => time()
-			// 	 );
-			// die(print_r($data1));
 			$this->db->insert('tbl_pelanggan_41518110070', $data);
-			// $this->db->insert('tbl_token_pelanggan', $data1);
-			// $this->_sendmail($token,'verify');
 			$this->session->set_flashdata('message', 'swal("Berhasil", "Pendaftaran Berhasil! Silahkan login kembali.", "success");');
     		redirect('login_41518110070');
 		}

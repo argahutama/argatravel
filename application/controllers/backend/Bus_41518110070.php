@@ -28,7 +28,6 @@ class Bus_41518110070 extends CI_Controller {
 			'kapasitas_bus'		 => $this->input->post('seat'),
 			'status_bus'			=> '1'
 			 );
-		// die(print_r($data));
 		$this->db->insert('tbl_bus_41518110070', $data);
 		$this->session->set_flashdata('message', 'swal("Berhasil", "Data Bus Di Simpan", "success");');
 		redirect('backend/bus_41518110070');
