@@ -190,7 +190,7 @@ class Tiket_41518110070 extends CI_Controller {
 			$upload_data = $this->upload->data();
 			$featured_image = '/assets/frontend/upload/payment/'.$upload_data['file_name'];
 			$data = array(
-						'kd_konfirmasi' => $this->getkod_model->get_kodkon(),
+						'kd_konfirmasi' => $this->getkod_model_model->get_kodkon(),
 						'kd_order'	=> $this->input->post('kd_order'),
 						'nama_bank_konfirmasi'		=> $this->input->post('bank_km'),
 						'nama_konfirmasi' =>  $this->input->post('nama'),
