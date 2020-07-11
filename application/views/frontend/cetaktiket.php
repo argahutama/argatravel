@@ -95,7 +95,7 @@
                 Nama Pemesan : <?php echo $cetak[0]['nama_order'];?></br>
                 Jadwal : <?php echo hari_indo(date('N',strtotime($cetak[0]['tgl_berangkat_order']))).', '.tanggal_indo(date('Y-m-d',strtotime(''.$cetak[0]['tgl_berangkat_order'].'')));?><br>
                 Jam Berangkat : <?php echo date('H:i',strtotime($cetak[0]['jam_berangkat_jadwal']))?></br>
-                Berangkat Dari : <?php echo $asal['nama_terminal_tujuan'].'-'.strtoupper($asal['kota_tujuan']);?></br>
+                Berangkat Dari : <?php echo $asal['nama_terminal_tujuan'].' - '.strtoupper($asal['kota_tujuan']);?></br>
                 Tujuan Ke : <?php echo $cetak[0]['nama_terminal_tujuan'].' - '.strtoupper($cetak[0]['kota_tujuan']); ?>
             </pre>
         </td>
@@ -117,7 +117,7 @@
         <tr>
            <td scope="row"><?php echo $row['kd_tiket']; ?></td>
            <td align="center"><?php echo $row['nama_kursi_order']; ?></td>
-           <td align="center"><?php echo $row['umur_kursi_order']; ?>Tahun</td>
+           <td align="center"><?php echo $row['umur_kursi_order']; ?> Tahun</td>
             <td align="center"><?php echo $row['no_kursi_order']; ?> </td>
            <td align="center"><?php echo 'Rp '.number_format(($row['harga_jadwal'])).',-'; ?></td>
         <tr>

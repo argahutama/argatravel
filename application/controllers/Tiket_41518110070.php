@@ -119,7 +119,7 @@ class Tiket_41518110070 extends CI_Controller {
 		for($i=0; $i<$count; $i++) {
 			$simpan = array(
 				'kd_order' => $getkode,
-				'kd_tiket' => 'T'.$getkode.str_replace('-','',$tglberangkat).$kursi[$i],
+				'kd_tiket' => 'T'.str_replace('ORD0','',$getkode).str_replace('-','',$tglberangkat).$kursi[$i],
 				'kd_jadwal'	=> $kd_jadwal,
 				'kd_pelanggan' => $kd_pelanggan,
 				'asal_order' => $asal['kd_tujuan'],
@@ -166,18 +166,6 @@ class Tiket_41518110070 extends CI_Controller {
 		$send['count'] = $this->db->query("SELECT count(kd_order) FROM tbl_order_41518110070 WHERE kd_order ='".$value."'")->row_array();
 		$send['sendmail'] = $this->db->query("SELECT * FROM tbl_order_41518110070 LEFT JOIN tbl_jadwal_41518110070 on tbl_order_41518110070.kd_jadwal = tbl_jadwal_41518110070.kd_jadwal LEFT JOIN tbl_tujuan_41518110070 on tbl_jadwal_41518110070.kd_tujuan = tbl_tujuan_41518110070.kd_tujuan LEFT JOIN tbl_bank_41518110070 on tbl_order_41518110070.kd_bank = tbl_bank_41518110070.kd_bank WHERE kd_order ='".$value."'")->row_array();
         $this->load->view('frontend/checkout', $data);
-	}
-	public function caritiket(){
-		// die(print_r($POST));
-		$id = $this->input->post('kodetiket');
-		$sqlcek = $this->db->query("SELECT * FROM tbl_order_41518110070 LEFT JOIN tbl_bus_41518110070 on tbl_order_41518110070.kd_bus = tbl_bus_41518110070.kd_bus LEFT JOIN tbl_jadwal_41518110070 on tbl_order_41518110070.kd_jadwal = tbl_jadwal_41518110070.kd_jadwal WHERE kd_order ='".$id."'")->result_array();
-		if ($sqlcek == NULL) {
-			$this->session->set_flashdata('message', 'swal("Kosong", "Tidak Ada Tiket", "error");');
-    		redirect('tiket_41518110070/cektiket');
-		}else{
-			$data['tiket'] = $sqlcek;
-			$this->load->view('frontend/payment', $data);
-		}
 	}
 	public function konfirmasi($value='',$harga=''){
 		$this->getsecurity();

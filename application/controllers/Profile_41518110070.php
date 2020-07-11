@@ -84,7 +84,7 @@ class Profile_41518110070 extends CI_Controller {
 		$username = $this->session->userdata('username');
 		if (empty($username)) {
 			$this->session->sess_destroy();
-			redirect('backend/login_41518110070');
+			redirect('login_41518110070');
 		}
 	}
 }

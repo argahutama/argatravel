@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 11, 2020 at 06:39 AM
+-- Generation Time: Jul 11, 2020 at 08:53 AM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.5
 
@@ -129,7 +129,8 @@ INSERT INTO `tbl_jadwal_41518110070` (`kd_jadwal`, `kd_bus`, `kd_tujuan`, `kd_as
 ('J0004', 'B001', 'TJ004', 'TJ008', 'Semarang', '07:30:00', '10:00:00', '220000'),
 ('J0005', 'B002', 'TJ005', 'TJ008', 'Malang', '11:00:00', '03:00:00', '330000'),
 ('J0006', 'B006', 'TJ006', 'TJ008', 'Palembang', '17:00:00', '20:00:00', '250000'),
-('J0007', 'B008', 'TJ007', 'TJ008', 'Medan', '02:18:00', '18:18:00', '400000');
+('J0007', 'B008', 'TJ007', 'TJ008', 'Medan', '02:18:00', '18:18:00', '400000'),
+('J0009', 'B009', 'TJ009', 'TJ008', 'Solo', '02:18:00', '18:18:00', '120000');
 
 -- --------------------------------------------------------
 
@@ -154,7 +155,9 @@ CREATE TABLE `tbl_konfirmasi_41518110070` (
 INSERT INTO `tbl_konfirmasi_41518110070` (`kd_konfirmasi`, `kd_order`, `nama_konfirmasi`, `nama_bank_konfirmasi`, `norek_konfirmasi`, `total_konfirmasi`, `photo_konfirmasi`) VALUES
 ('KF0001', 'ORD00002', 'Arga Hutama', 'Mandiri', '12', '128000', '/assets/frontend/upload/payment/ace.png'),
 ('KF0002', 'ORD00003', '', NULL, '', '250000', '/assets/frontend/upload/payment/a.JPG'),
-('KF0003', 'ORD00004', 'Argaa', 'BNI', '1231231231', '300000', '/assets/frontend/upload/payment/ewww.JPG');
+('KF0003', 'ORD00004', 'Argaa', 'BNI', '1231231231', '300000', '/assets/frontend/upload/payment/ewww.JPG'),
+('KF0004', 'ORD00006', 'Mason Greenwood', 'Mandiri', '23423432423', '400000', '/assets/frontend/upload/payment/wwwew.jpg'),
+('KF0005', 'ORD00007', 'Arga Hutama', 'Mandiri', '2412423', '120000', '/assets/frontend/upload/payment/download.png');
 
 -- --------------------------------------------------------
 
@@ -231,7 +234,11 @@ INSERT INTO `tbl_order_41518110070` (`id_order`, `kd_order`, `kd_tiket`, `kd_jad
 (33, 'ORD00001', 'TORD00001J0003202007113', 'J0003', 'PL0008', 'BNK0004', 'TJ008', 'Arga Hutama', 'Rabu, 08 Juli 2020, 00:36', '2020-07-11', 'Arga Hutama', '23', '3', '213', '023333333', 'Jalan Jalan yuk', 'argahuts@gmail.com', '09-07-2020 00:36:37', 'assets/frontend/upload/qrcode/ORD00001.png', '2'),
 (34, 'ORD00002', 'TORD00002202007097', 'J0006', 'PL0008', 'BNK0002', 'TJ008', 'Arga Hutama', 'Rabu, 08 Juli 2020, 01:39', '2020-07-09', 'Kocheng Oren', '14', '7', '56', '023333333', 'Jalan Jalan yuk', 'argahuts@gmail.com', '09-07-2020 01:39:06', 'assets/frontend/upload/qrcode/ORD00002.png', '2'),
 (35, 'ORD00003', 'TORD000032020071014', 'J0003', 'PL0008', 'BNK0003', 'TJ008', 'Arga Hutama', 'Kamis, 09 Juli 2020, 03:04', '2020-07-10', 'Berliana Margaretha', '19', '14', '0', '023333333', 'Jalan Jalan yuk', 'argahuts@gmail.com', '10-07-2020 03:04:35', 'assets/frontend/upload/qrcode/ORD00003.png', '2'),
-(36, 'ORD00004', 'TORD000042020071211', 'J0001', 'PL0008', 'BNK0004', 'TJ008', 'Arga Hutama', 'Sabtu, 11 Juli 2020, 08:08', '2020-07-12', 'Endri Biwinarni', '47', '11', '2232323232323232', '083333333333', 'Solo', 'argahuts@gmail.com', '12-07-2020 08:08:42', 'assets/frontend/upload/qrcode/ORD00004.png', '2');
+(36, 'ORD00004', 'TORD000042020071211', 'J0001', 'PL0008', 'BNK0004', 'TJ008', 'Arga Hutama', 'Sabtu, 11 Juli 2020, 08:08', '2020-07-12', 'Endri Biwinarni', '47', '11', '2232323232323232', '083333333333', 'Solo', 'argahuts@gmail.com', '12-07-2020 08:08:42', 'assets/frontend/upload/qrcode/ORD00004.png', '2'),
+(37, 'ORD00005', 'TORD00005202007162', 'J0002', 'PL0001', 'BNK0004', 'TJ008', 'Arga Hutama', 'Sabtu, 11 Juli 2020, 13:14', '2020-07-16', 'Arga', '23', '2', '342234234432423', '023333333', 'Jalan Jalan yuk', 'argahuts@gmail.com', '12-07-2020 13:14:57', 'assets/frontend/upload/qrcode/ORD00005.png', '2'),
+(38, 'ORD00006', 'TORD00006202007133', 'J0007', 'PL0001', 'BNK0001', 'TJ008', 'Arga Hutama', 'Sabtu, 11 Juli 2020, 13:29', '2020-07-13', 'Mason Greenwood', '19', '3', '342234234432423', '023333333', 'Jalan Jalan yuk', 'argahuts@gmail.com', '12-07-2020 13:29:55', 'assets/frontend/upload/qrcode/ORD00006.png', '2'),
+(39, 'ORD00007', 'TORD000072020121811', 'J0009', 'PL0001', 'BNK0004', 'TJ008', 'Arga Hutama', 'Sabtu, 11 Juli 2020, 13:39', '2020-12-18', 'Buwung Puyuh', '17', '11', '342234234432423', '023333333', 'Jalan Jalan yuk', 'argahuts@gmail.com', '12-07-2020 13:39:14', 'assets/frontend/upload/qrcode/ORD00007.png', '2'),
+(40, 'ORD00008', 'T000082020072513', 'J0004', 'PL0002', 'BNK0004', 'TJ008', 'Otong Surotong', 'Sabtu, 11 Juli 2020, 13:46', '2020-07-25', 'Otong', '69', '13', '02564651321564', '089682261128', 'Gang Buntu', 'sellapurwita36@gmail.com', '12-07-2020 13:46:15', 'assets/frontend/upload/qrcode/ORD00008.png', '2');
 
 -- --------------------------------------------------------
 
@@ -289,10 +296,14 @@ CREATE TABLE `tbl_tiket_41518110070` (
 --
 
 INSERT INTO `tbl_tiket_41518110070` (`kd_tiket`, `kd_order`, `nama_tiket`, `kursi_tiket`, `umur_tiket`, `asal_beli_tiket`, `harga_tiket`, `etiket_tiket`, `status_tiket`, `create_tgl_tiket`, `create_admin_tiket`) VALUES
+('T000082020072513', 'ORD00008', 'Otong', '13', '69 Tahun', 'TJ008', '220000', 'assets/backend/upload/etiket/ORD00008.pdf', '2', '2020-07-11', 'supervisor'),
 ('TORD00001J0003202007113', 'ORD00001', 'Arga Hutama', '3', '23 Tahun', 'TJ008', '134000', 'assets/backend/upload/etiket/ORD00001.pdf', '2', '2020-07-08', 'supervisor'),
 ('TORD00002202007097', 'ORD00002', 'Kocheng Oren', '7', '14 Tahun', 'TJ008', '128000', 'assets/backend/upload/etiket/ORD00002.pdf', '2', '2020-07-08', 'supervisor'),
 ('TORD000032020071014', 'ORD00003', 'Berliana Margaretha', '14', '19 Tahun', 'TJ008', '250000', 'assets/backend/upload/etiket/ORD00003.pdf', '2', '2020-07-09', 'supervisor'),
-('TORD000042020071211', 'ORD00004', 'Endri Biwinarni', '11', '47 Tahun', 'TJ008', '300000', 'assets/backend/upload/etiket/ORD00004.pdf', '2', '2020-07-11', 'supervisor');
+('TORD000042020071211', 'ORD00004', 'Endri Biwinarni', '11', '47 Tahun', 'TJ008', '300000', 'assets/backend/upload/etiket/ORD00004.pdf', '2', '2020-07-11', 'supervisor'),
+('TORD00005202007162', 'ORD00005', 'Arga', '2', '23 Tahun', 'TJ008', '120000', 'assets/backend/upload/etiket/ORD00005.pdf', '2', '2020-07-11', 'supervisor'),
+('TORD00006202007133', 'ORD00006', 'Mason Greenwood', '3', '19 Tahun', 'TJ008', '400000', 'assets/backend/upload/etiket/ORD00006.pdf', '2', '2020-07-11', 'supervisor'),
+('TORD000072020121811', 'ORD00007', 'Buwung Puyuh', '11', '17 Tahun', 'TJ008', '120000', 'assets/backend/upload/etiket/ORD00007.pdf', '2', '2020-07-11', 'supervisor');
 
 -- --------------------------------------------------------
 
@@ -319,7 +330,8 @@ INSERT INTO `tbl_tujuan_41518110070` (`kd_tujuan`, `kota_tujuan`, `nama_terminal
 ('TJ005', 'Malang', 'Terminal Arjosari', 'Arjosari, Blimbing, Malang, Jawa Timur'),
 ('TJ006', 'Palembang', 'Terimnal Alang-alang Lebar', 'Jl. Bypass Alang-Alang Lebar, Kec. Alang-Alang Lebar, Kota Palembang'),
 ('TJ007', 'Medan', 'Terimnal Terpadu Amplas', 'Timbang Deli, Medan Amplas, Kota Medan, Sumatera Utara 20148'),
-('TJ008', 'Jakarta', 'Terimnal Pulogadung', 'Pulogadung, Jakarta Timur, DKI Jakarta');
+('TJ008', 'Jakarta', 'Terimnal Pulogadung', 'Pulogadung, Jakarta Timur, DKI Jakarta'),
+('TJ009', 'Solo', 'Terimnal Tirtonadi', 'Jl Jend A Yani 262, Gilingan, Banjarsari, Kota Solo');
 
 --
 -- Indexes for dumped tables
@@ -419,7 +431,7 @@ ALTER TABLE `tbl_menu_41518110070`
 -- AUTO_INCREMENT for table `tbl_order_41518110070`
 --
 ALTER TABLE `tbl_order_41518110070`
-  MODIFY `id_order` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
+  MODIFY `id_order` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
