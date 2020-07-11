@@ -41,7 +41,7 @@
         <?php if ($this->session->userdata('level') == '1') { ?>
            <a class="nav-link" href="<?php echo base_url() ?>backend/bank_41518110070">
           <i class="fas fa fa-link"></i>
-          <span>Data Bank</span></a>
+          <span>Data Rekening</span></a>
         <a class="nav-link" href="<?php echo base_url() ?>backend/laporan_41518110070">
           <i class="fa fa fa-file"></i>
           <span>Laporan</span></a>
@@ -49,7 +49,7 @@
           <li class="nav-item">
             <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
               <i class="fas fa-fw fa-users"></i>
-              <span>Management User</span>
+              <span>Manajemen User</span>
             </a>
             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
               <div class="bg-white py-2 collapse-inner rounded">
