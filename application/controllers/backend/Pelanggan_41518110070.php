@@ -5,7 +5,7 @@ class Pelanggan_41518110070 extends CI_Controller {
 	function __construct(){
 	parent::__construct();
 		$this->load->helper('tglindo_helper');
-		$this->load->model('getkod_model');
+		$this->load->model('getkod_model_41518110070');
 		$this->getsecurity();
 		date_default_timezone_set("Asia/Jakarta");
 	}

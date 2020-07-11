@@ -87,7 +87,7 @@ class Login_41518110070 extends CI_Controller {
 			$this->load->view('frontend/daftar');
 		} else {
 			// die(print_r($_POST));
-			$this->load->model('getkod_model');
+			$this->load->model('getkod_model_41518110070');
 			$data = array(
 			'kd_pelanggan'	=> $this->getkod_model->get_kodpel(),
 			'nama_pelanggan'  => $this->input->post('name'),

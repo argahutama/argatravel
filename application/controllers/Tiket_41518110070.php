@@ -5,7 +5,7 @@ class Tiket_41518110070 extends CI_Controller {
 	public function __construct(){
 		parent::__construct();
 		$this->load->helper('tglindo_helper');
-		$this->load->model('getkod_model');
+		$this->load->model('getkod_model_41518110070');
 		date_default_timezone_set("Asia/Jakarta");
 	}
 	function getsecurity($value=''){

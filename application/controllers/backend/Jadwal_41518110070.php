@@ -4,7 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Jadwal_41518110070 extends CI_Controller {
 	function __construct(){
 	parent::__construct();
-		$this->load->model('getkod_model');
+		$this->load->model('getkod_model_41518110070');
 		$this->getsecurity();
 		$this->load->library('form_validation');
 		$this->load->helper('tglindo_helper');

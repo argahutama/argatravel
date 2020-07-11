@@ -1,7 +1,6 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-class Model_grafik extends CI_Model{
-
+class Model_grafik_41518110070 extends CI_Model{
    function qry_jumlah_tujuan() {
       $data = $this->db->query("
       SELECT tbl_jadwal_41518110070.wilayah_jadwal as tujuan, COUNT(tbl_order_41518110070.kd_jadwal) as jumlah
@@ -12,5 +11,4 @@ class Model_grafik extends CI_Model{
       GROUP BY tujuan");
       return $data->result();
    }
-   
 } 
